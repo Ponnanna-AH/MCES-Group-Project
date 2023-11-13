@@ -1,4 +1,4 @@
-Description 
+# Description 
 
 We utilized reg51.h header file in
 C language to design and program a
@@ -18,7 +18,7 @@ the user from in the attempt,
 while for 'R', it would overwrite 
 the earlier passcode. 
 
-Overview
+# Overview
 Using the reg51.h header file for 
 8051 microcontroller for the design.
 
@@ -29,23 +29,24 @@ and enabling serial buffer to receive data.
 We start the timer 1.
 This would prompt the user to choose to 
 enter or reset the passcode, by typing
-letter 'r' or 'e'.
+letter `r` or `e`.
 
 In any case the user would be prompted
 to enter the passcode, while, the next
 stage differs from here. If the initial
-character was 'e', indicating to enter 
+character was `e`, indicating to enter 
 the passcode, it would transmit 
 the passcode to array `EnteredPassCode`
 , call `ComparePassCode` function 
-to compare the array and send 'A' or 'D' 
+to compare the array and send `A` or `D` 
 for authorization or decline.
 
-While for 'R' in earlier prompt 
+While for `R` in earlier prompt 
 would call `resetPasscode` which would 
 overwrite `authorizedPasscode` 
 the passcode with the new one.
 
+# Uses
 These certain kind of security door 
 lock systems are in use today, with
 increasing crime, these type of technologies
